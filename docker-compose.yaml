@@ -3,7 +3,7 @@ services:
     image: nginx:alpine
     container_name: testing-cd
     ports:
-      - 8000:80
+      - 8003:80
     volumes:
       - ./:/usr/share/nginx/html:ro
     restart: unless-stopped
