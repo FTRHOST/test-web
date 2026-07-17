@@ -4,6 +4,4 @@ services:
     container_name: testing-cd
     ports:
       - 8003:80
-    volumes:
-      - ./:/usr/share/nginx/html:ro
     restart: unless-stopped
