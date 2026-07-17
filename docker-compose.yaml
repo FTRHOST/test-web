@@ -1,9 +1,8 @@
 services:
   frontend:
-    image: nginx:alpine
+    build: .
+    pull_policy: build
     container_name: testing-cd
     ports:
       - 8003:80
-    volumes:
-      - ./index.html:/usr/share/nginx/html/index.html
     restart: unless-stopped
